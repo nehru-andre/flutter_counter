@@ -36,18 +36,18 @@ class CounterScreen extends StatelessWidget {
         ),
 
         /// The body of the app contains the counter value display and action buttons.
-        body: Center(
+        body: const Center(
           child: Column(
             // Centers the column vertically
             mainAxisAlignment: MainAxisAlignment.center, 
             children: <Widget>[
-              const Text(
+              Text(
                 'Counter Value:',
                 style: TextStyle(fontSize: 20, color: Colors.black87),
               ),
-              const SizedBox(height: 20),
+              SizedBox(height: 20),
               CounterDisplay(),
-              const SizedBox(height: 30),
+              SizedBox(height: 30),
               CounterButtons(),
             ],
           ),
